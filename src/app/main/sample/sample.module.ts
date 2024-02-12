@@ -16,6 +16,11 @@ const routes = [
     data: { animation: 'sample' }
   },
   {
+    path: '',
+    component: HomeComponent,
+    data: { animation: 'home' }
+  },
+  {
     path: 'home',
     component: HomeComponent,
     data: { animation: 'home' }

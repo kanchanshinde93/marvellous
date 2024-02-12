@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -18,6 +18,7 @@ import { coreConfig } from 'app/app-config';
 import { AppComponent } from 'app/app.component';
 import { LayoutModule } from 'app/layout/layout.module';
 import { SampleModule } from 'app/main/sample/sample.module';
+import { ComonlaypoutModule } from './comonlaypout/comonlaypout.module';
 
 const appRoutes: Routes = [
   {
@@ -38,6 +39,7 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [AppComponent],
   imports: [
+    ComonlaypoutModule,
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
@@ -60,7 +62,7 @@ const appRoutes: Routes = [
     // App modules
     LayoutModule,
     SampleModule
-  ],
+  ],schemas: [CUSTOM_ELEMENTS_SCHEMA],
 
   bootstrap: [AppComponent]
 })
