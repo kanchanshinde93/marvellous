@@ -1,146 +1,71 @@
-.table>:not(caption)>*>* {
-    padding: 1.5rem 1.5rem;
-    background-color: var(--bs-table-bg);
-    border-bottom-width: 1px;
-    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+// final css
+h1.heading1{
+    font-size: 25px;
+    font-weight: bold;
 }
-section#complaint {
-    padding: 100px 0;
-}
-h1.pricing-heading {
-    padding: 30px 0;
-}
-.footer-menu a:hover {
-    color: red;
-}
-.footer-location-1 {
-    display: flex;
-}
-.foot-column-parent {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-logo p {
-    max-width: 370px;
-    font-size: 14px;
-}
-
-.footer-location-1 a {
-    border: 1px solid red;
-    border-radius: 34px;
-    text-align: center;
-    margin: 0 5px;
-    height: 50px;
-    display: flex;
-    width: 50px;
-    justify-content: center;
-    padding: 11px 11px;
-    align-items: center;
-}
-.footer-column {
-    display: flex;
-    align-items: center;
-}
-
-
-.footer-parent-column {
-    display: flex;
-    padding: 40px 0;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.second-footer-icon ul {
-    display: flex;
-}
-
-.second-footer-icon li {
-    margin: 0 14px;
-    list-style: none;
-}
-
-.second-footer {
-    padding-top: 24px;
-    border-top: 1px solid grey;
-}
-
-.footer-location-ctn {
-    color: rgb(0, 0, 0);
-    margin-left: 14px;
-    font-size: 10px;
-}
-
-.footer-ctn {
-    color: rgb(0, 0, 0);
-    margin-left: 14px;
-    font-size: 10px;
-}
-
-.second-footer-ctn {
-    color: rgb(0, 0, 0);
-    font-size: 14px;
-}
-
-.foot {
-    color: rgb(0, 0, 0);
-    font-size: 14px;
-}
-.footer-end {
-    height: 100px;
-    text-align: center;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-}
-.footer3-ctn img {
+section.footer {
     background-color: black;
-    padding: 10px 10px;
-    border-radius: 26px;
-    height: 39px;
-    width: 39px;
+    color: white;
+    padding: 50px 0;
 }
-.footer3-ctn.d-flex {
-    margin-bottom: 11px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+ul.footer-nav li a {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+}   
+p.fabout-ctn {
+    line-height: 31px;
+    padding-top: 12px;
 }
-.f-menu ul {
-    padding: 0;
-    padding-top: 8px;
-    font-size: 14px;
+ul.footer-nav li {
+    list-style: none;
+    margin-bottom: 17px;
 }
+ul.footer-nav {
+    padding-top: 14px;
+    padding-left: 0;
+}
+ul.footer-nav li a:hover{
+    color:#066D72;
+}   
 
-.f-menu li {
-    margin: 10px 0;
+
+// jbcjkdsb
+.submit{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 11px 35px;
+    border-radius: 50px;
+    background-color: #066D72;
 }
-.footer-menu {
+  
+  .input-main input {
+    height: 26px;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    color: #a2a2a2;
+    font-size: 1rem;
+  }
+  
+  .input-main input::placeholder {
+    color: #a2a2a2;
+  }
+  .input-main {
     display: flex;
     justify-content: center;
-    padding-top: 45px;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    margin-right: 15px;
+    width: 100%;
 }
-
-.f-menu {
-    margin: 0 52px;
-}
-
-.menu-heading h1 {
-    font-size: 20px;
-}
-
-.follow-heading h1 {
-    font-size: 20px;
-}
-
-.extra-heading h1 {
-    font-size: 20px;
-}
-
-.footer-menu a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-
-.footer-menu li {
-    list-style: none;
+  
+  .form-box {
+    display: flex;
+    align-items: center;
+    margin-top: 27px;
 }
