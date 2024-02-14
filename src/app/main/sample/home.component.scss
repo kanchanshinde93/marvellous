@@ -1,3 +1,4 @@
+// feature sectionn css
 .faeture-heading {
     text-align: center;
 }
@@ -42,6 +43,86 @@ p.content {
     padding-top: 16px;
     line-height: 26px;
 }
+
+// saving sectioncss
 .saving-parent1 {
     text-align: center;
+}
+ 
+
+// case section css
+button {
+    border: none;
+    background-color: black;
+    padding: 13px 21px;
+    border-radius: 31px;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+.download-btn {
+    display: flex;
+    justify-content: end;
+}
+section.case {
+    padding: 100px 0;
+}
+.images-parent{
+    padding-top: 60px;
+    text-align: center;
+}
+.dowload-parent h1 {
+    font-weight: bold;
+}
+.dowload-parent h5 {
+    color: #066D72;
+}
+.row.parent {
+    display: flex;
+    align-items: center;
+}
+
+// get in touch section css
+section.get {
+    background-image: url(../../../assets/images/myimages/geet.svg);
+}
+.faeture-heading1 {
+    text-align: center;
+    color: white;
+}button a {
+    text-decoration: none;
+    color: white;
+}
+// button:hover{
+//     background-color: #066D72;
+//     transition: background-color 0.5s ease;
+//     transition-delay: 0.2s;
+// }
+button:hover,
+button:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+//   transform: translateY(-0.25em);
+  background-color: #066D72;
+      transition: background-color 0.1s ease;
+    //   transition-delay: 0.2s;
+    transition-duration: 2.5s; /* Increase duration for hover transition */
+   
+}
+
+// button:hover {
+//     transition-timing-function: ease-in-out; /* Smooth transition */
+//   }
+
+
+
+
+
+
+// ahsjfvugv
+.get-parent {
+    background-color: black;
+    opacity: 0.6;
+}
+.get-parent h5{
+    color: white;
 }
