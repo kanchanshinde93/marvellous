@@ -382,3 +382,31 @@ button.video-btn a span {
     color: black;
     font-weight: bold;
 }
+
+
+
+
+// sdkjfcbihfbc
+@media(max-width:320px) {
+    .card.border {
+        margin-top: 30px;
+    }
+    .card.black{
+        margin-top: 30px;
+    }
+    .download-btn{
+        display: flex;
+        justify-content: start;
+    }
+}
+@media(max-width:767px) {
+    .card.border {
+        margin-top: 30px;
+    }
+    .card.black{
+        margin-top: 30px;
+    }.download-btn {
+        display: flex;
+        justify-content: start;
+    }
+}
