@@ -447,3 +447,32 @@ button.video-btn a span {
         padding: 50px 0;
     }
 }
+
+
+
+// dkjbvn hjdvb  animation
+@property --num {
+    syntax: '<integer>';
+    inherits: true;
+    initial-value: 1;
+  }
+  
+  h1.experience::before{
+    counter-reset: my-counter var(--num);
+    content: counter(my-counter);
+    animation: count 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes count {
+    to { --num: 5; }
+  }
+  .w3-animate-right{position:relative;animation:animateright 2s}
+
+@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+
+.overlay {
+  position: absolute;
+  }
+  .w3-animate-left{position:relative;animation:animateleft 2s}
+
+  
