@@ -1,6 +1,7 @@
 // feature sectionn css
 .faeture-heading {
     text-align: center;
+    padding-bottom: 18px;
 }
 .saving-parent {
     text-align: center;
@@ -118,11 +119,266 @@ button:focus {
 
 
 
-// ahsjfvugv
+// get section
 .get-parent {
     background-color: black;
     opacity: 0.6;
 }
 .get-parent h5{
     color: white;
+}
+// section.get {
+//     margin: 100px 0;
+// }
+
+
+
+// 
+.banner-ctn h5 {
+    color: #066d72;
+}
+.banner-ctn h1 {
+    font-weight: bold;
+}
+
+/// freee
+button.form1 {
+    padding: 10px;
+    width: 100%;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-group {
+    margin: 30px 0;
+}
+.fakeimg1 {
+    text-align: center;
+    position: relative;
+}
+section.mybanner {
+    padding: 100px 0;
+}
+.fake-parent.col-sm-12.col-md-6.col-lg-6 {
+    display: grid;
+    align-items: center;
+}
+button.form1 {
+    padding: 10px;
+    width: 100%;
+    border-radius: 0;
+}
+.bottom-center{
+    position: absolute;
+    left: 50%;
+    text-align: left;
+    transform: translate(-50%, -50%);
+}
+.card-header.savings {
+    // background-color: white;
+    border: none;
+}
+.card.savings {
+    background-color: white;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}   
+.saving-parent11{
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border-bottom: 1px solid #e1e1e1;
+    
+}
+
+.saving-img {
+    border: 1px solid #ede2e2;
+    padding: 12px;
+    border-radius: 36px;
+}
+.card-header.savings p {
+    font-size: 12px;
+}
+p.card-text {
+    font-weight: bold;
+}
+
+
+
+
+
+// aim css
+.download-btn1 {
+   padding-top: 30px;
+}
+.form-parent h1 span {
+    color: #066d72;
+    font-size: 20px;
+}
+.form-parent h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+h1.experience{
+    display: flex;
+    align-items: center;
+}
+section.aim {
+    padding: 100px 0;
+}
+.bottom-left{
+    position: absolute;
+    right: 50%;
+    bottom: -34px;
+    text-align: left;
+    transform: translate(-50%, -50%);
+}
+.card.savings1 {
+    background-color: #066d72;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: white;
+}
+.card-header.savings {
+    background: none;
+}
+
+
+
+
+// client section
+.client-ctn {
+    background-color: black;
+    height: 100%;
+    color: white;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    border-radius: 0px 30px 30px 0px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.img-section img {
+    width: 100%;
+}
+.client-ctn p {
+    padding-top: 15px;
+}
+.client-ctn h1 {
+    line-height: 53px;
+}
+section.client {
+    padding: 50px 0;
+}
+
+
+
+// trusted
+p.trusted-ctn {
+    padding-top: 18px;
+}
+.load li {
+    line-height: 35px;
+}
+section.trusted {
+    padding: 100px 0;
+}
+.load li{
+    list-style: none;
+}
+.load span {
+    margin-left: 15px;
+}
+.load ul {
+    padding: 0;
+}
+
+
+// earning css
+.earning-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+p.card-text1 {
+    font-weight: bold;
+    color: #066d72;
+    font-size: 24px;
+}
+p.card-text11 {
+    font-weight: bold;
+    color: white;
+    font-size: 24px;
+}
+
+h6.card-subtitle.text-body-secondary {
+    margin: 30px 0;
+    font-size: 20px;
+}
+a.card-link {
+    color: #066d72;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 600;
+}
+.btn-p {
+    padding-top: 16px;
+}
+.card.black {
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+}
+a.card-link1 {
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 600;
+}
+.card.border {
+    border-radius: 20px;
+}
+.card.border:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: box-shadow 0.5s ease;
+}
+.card.black:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: box-shadow 0.5s ease;
+}
+.earning-heading h1 {
+    font-size: 48px;
+}
+section.earning {
+    padding: 60px 0;
+}
+.banner-ctn1 h1 {
+    font-size: 64px;
+    font-weight: bold;
+}
+.download-btn11 {
+    padding-top: 30px;
+    gap: 53px;
+}
+button.video-btn {
+    background-color: white;
+    border: 1px solid black;
+}
+button.video-btn a span {
+    color: black;
+    font-weight: bold;
 }
