@@ -396,12 +396,19 @@ button.video-btn a span {
     }
     .download-btn{
         display: flex;
-        justify-content: start;
+        justify-content: center;
     }
     .client-ctn {
-        
         border-radius: inherit;
-        
+        padding: 35px;
+    }
+    .col-md-12.col-lg-4.col-sm-12.column {
+        padding-top: 30px;
+    }
+    .fakeimg.child {
+        padding: 23px;
+    }.dowload-parent {
+        text-align: center;
     }
 }
 @media(max-width:767px) {
@@ -412,11 +419,19 @@ button.video-btn a span {
         margin-top: 30px;
     }.download-btn {
         display: flex;
-        justify-content: start;
+        justify-content: center;
     }
     .client-ctn{
-
         border-radius: inherit;
-       
+        padding: 35px;
+    }
+    .col-md-12.col-lg-4.col-sm-12.column {
+        padding-top: 30px;
+    }
+    .fakeimg.child {
+        padding: 23px;
+    }
+    .dowload-parent {
+        text-align: center;
     }
 }
