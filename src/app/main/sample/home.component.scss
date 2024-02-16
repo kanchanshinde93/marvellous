@@ -410,6 +410,12 @@ button.video-btn a span {
     }.dowload-parent {
         text-align: center;
     }
+    section.aim {
+        padding: 50px 0;
+    }
+    section.case {
+        padding: 50px 0;
+    }
 }
 @media(max-width:767px) {
     .card.border {
@@ -433,5 +439,11 @@ button.video-btn a span {
     }
     .dowload-parent {
         text-align: center;
+    }
+    section.aim {
+        padding: 50px 0;
+    }
+    section.case{
+        padding: 50px 0;
     }
 }
