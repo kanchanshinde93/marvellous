@@ -398,6 +398,11 @@ button.video-btn a span {
         display: flex;
         justify-content: start;
     }
+    .client-ctn {
+        
+        border-radius: inherit;
+        
+    }
 }
 @media(max-width:767px) {
     .card.border {
@@ -408,5 +413,10 @@ button.video-btn a span {
     }.download-btn {
         display: flex;
         justify-content: start;
+    }
+    .client-ctn{
+
+        border-radius: inherit;
+       
     }
 }
