@@ -1,2 +1,12 @@
 // @import '@core/scss/core.scss';
 // @import './assets/scss/styles';
+
+
+@font-face {
+    font-family: OpenSans;
+    src: url(assets/fonts/font-openSans/OpenSans-Regular.ttf) format();
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
