@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'
+import AOS from 'aos';
 
 @Component({
   selector: 'app-home',
@@ -17,6 +18,12 @@ export class HomeComponent implements OnInit {
    * On init
    */
   ngOnInit() {
+    AOS.init( {offset: 200, // Offset (in px) from the original trigger point
+    duration: "5s", // Duration of animation (in ms)
+    easing: 'ease-in-out', // Easing type
+    once: true});//AOS - 2
+    AOS.refresh();
+    
     this.contentHeader = {
       headerTitle: 'Home',
       actionButton: true,

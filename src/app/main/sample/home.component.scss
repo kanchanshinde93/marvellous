@@ -453,17 +453,20 @@ button.video-btn a span {
 // dkjbvn hjdvb  animation
 @property --num {
     syntax: '<integer>';
-    inherits: true;
+    inherits: false;
     initial-value: 1;
   }
   
   h1.experience::before{
     counter-reset: my-counter var(--num);
     content: counter(my-counter);
-    animation: count 1s ease-in-out infinite alternate;
+    // animation:  count 1s ease-in-out infinite alternate forwards;
+    animation: count 5s ease-in-out 1 alternate forwards 
   }
   
   @keyframes count {
+   /*  to { --num: 5; } */
+    from { --num: 1; }
     to { --num: 5; }
   }
   .w3-animate-right{position:relative;animation:animateright 2s}
@@ -474,5 +477,6 @@ button.video-btn a span {
   position: absolute;
   }
   .w3-animate-left{position:relative;animation:animateleft 2s}
+
 
   
