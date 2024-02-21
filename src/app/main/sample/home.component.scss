@@ -15,9 +15,11 @@ section.features {
 }
 
 .features-parent {
+    padding: 100px 0;
+}
+.features-parent22 {
     padding: 60px 0;
 }
-
 .faeture-heading h5 {
     color: #066D72;
 }
@@ -45,7 +47,7 @@ section.features {
 }
 
 .saving-parent h5 {
-    font-size: 27px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -59,6 +61,14 @@ p.content {
     text-align: center;
 }
 
+.saving-parent1 {
+    text-align: center;
+    
+}
+.textsaving{
+    font-size: 25px;
+    font-weight: bold;
+}
 
 // case section css
 button {
@@ -336,7 +346,7 @@ section.client {
 
 // trusted
 p.trusted-ctn {
-    padding-top: 18px;
+    padding: 18px 5px 1px 0px;
 }
 
 .load li {
@@ -644,6 +654,9 @@ p.testmonialname {
 
     color: red;
     font-size: 20px;
+}
+p.abouttext {
+    padding: 15px 0px 15px 0px;
 }
 
 /* url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") */
