@@ -9,6 +9,7 @@ import { ContentHeaderModule } from 'app/layout/components/content-header/conten
 import { SampleComponent } from './sample.component';
 import { HomeComponent } from './home.component';
 import { CoreDirectivesModule } from '@core/directives/directives';
+import { AboutComponent } from './about/about.component';
 
 const routes = [
   {
@@ -25,12 +26,17 @@ const routes = [
     path: 'home',
     component: HomeComponent,
     data: { animation: 'home' }
+  },
+  {
+    path: 'about',
+    component: AboutComponent,
+    data: { animation: 'about' }
   }
 ];
 
 @NgModule({
-  declarations: [SampleComponent, HomeComponent],
+  declarations: [SampleComponent, HomeComponent, AboutComponent],
   imports: [RouterModule.forChild(routes), ContentHeaderModule, TranslateModule, CoreCommonModule,CommonModule,CoreDirectivesModule],
-  exports: [SampleComponent, HomeComponent]
+  exports: [SampleComponent, HomeComponent,AboutComponent]
 })
 export class SampleModule {}
