@@ -10,6 +10,7 @@ import { SampleComponent } from './sample.component';
 import { HomeComponent } from './home.component';
 import { CoreDirectivesModule } from '@core/directives/directives';
 import { AboutComponent } from './about/about.component';
+import { OurfeatureComponent } from './ourfeature/ourfeature.component';
 
 const routes = [
   {
@@ -31,11 +32,16 @@ const routes = [
     path: 'about',
     component: AboutComponent,
     data: { animation: 'about' }
+  },
+  {
+    path: 'Ourfeature',
+    component: OurfeatureComponent,
+    data: { animation: 'Ourfeature' }
   }
 ];
 
 @NgModule({
-  declarations: [SampleComponent, HomeComponent, AboutComponent],
+  declarations: [SampleComponent, HomeComponent, AboutComponent, OurfeatureComponent],
   imports: [RouterModule.forChild(routes), ContentHeaderModule, TranslateModule, CoreCommonModule,CommonModule,CoreDirectivesModule],
   exports: [SampleComponent, HomeComponent,AboutComponent]
 })
