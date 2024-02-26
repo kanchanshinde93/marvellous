@@ -777,7 +777,7 @@ h1.client::before {
    text-align: center;
 }
 .featuretxt h5 {
-    font-size: 48px;
+    font-size: 60px;
     font-weight: 700;
 }
 .progress-bar {
@@ -797,4 +797,13 @@ font-weight: 700;
 }
 .rounded {
     border-radius: 1.25rem!important;
+}
+.card.border.our:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: box-shadow 0.5s ease;
+   border: 2px solid #066d72 !important;
+}
+div#accordionFlushExample {
+    border: 1px solid;
+    padding: 4%;
 }
