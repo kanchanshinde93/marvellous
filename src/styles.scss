@@ -10,7 +10,9 @@
 body {
     font-family: 'Open Sans', sans-serif;
   }
-
+  a:hover{
+    color: white;
+  }
   // feature sectionn css
 .faeture-heading {
     text-align: center;
@@ -67,6 +69,16 @@ section.features {
 p.content {
     padding-top: 16px;
     line-height: 26px;
+}
+div#accordionFlushExample {
+    margin-top: 40px;
+}
+h1.headeingtext {
+    font-weight: 700;
+} 
+  h1.headeingtext {
+    font-size: 45px;
+    margin-top: 20px;
 }
 
 // saving sectioncss
@@ -145,13 +157,9 @@ button a {
 button:hover,
 button:focus {
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-    //   transform: translateY(-0.25em);
     background-color: #066D72;
     transition: background-color 0.1s ease;
-    //   transition-delay: 0.2s;
     transition-duration: 2.5s;
-    /* Increase duration for hover transition */
-
 }
 
 // button:hover {
@@ -366,10 +374,10 @@ p.trusted-ctn {
     line-height: 35px;
 }
 
-section.trusted {
-    padding: 30px 0;
+section.trusted{
+    /* padding: 58px 0; */
+    padding-top: 70px;
 }
-
 .load li {
     list-style: none;
 }
@@ -688,7 +696,6 @@ h1.headeingtext{
     color: white;
 
 }
-
 .centeredtxt {
     position: absolute;
     top: 50%;
@@ -780,6 +787,10 @@ h1.client::before {
     font-size: 60px;
     font-weight: 700;
 }
+.row.special {
+    display: flex;
+    align-items: center;
+}
 .progress-bar {
     background-color:#066d72;
 }
@@ -798,12 +809,210 @@ font-weight: 700;
 .rounded {
     border-radius: 1.25rem!important;
 }
-.card.border.our:hover {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    transition: box-shadow 0.5s ease;
-   border: 2px solid #066d72 !important;
-}
+// .card.border.our:hover {
+//     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+//     transition: box-shadow 0.5s ease;
+//    border: 2px solid #066d72 !important;
+// }
 div#accordionFlushExample {
-    border: 1px solid #5650505c;
+    border: 1px solid rgba(86, 80, 80, 0.3607843137);
     padding: 4%;
+    border-radius: 10px;
+}
+button.accordion-button.collapsed:hover {
+    background-color: white;
+}
+button.accordion-button.collapsed:focus {
+    background-color: white;
+}
+.banner-ctn {
+    padding-top: 31px;
+}
+button.accordion-button.feature.collapsed {
+    font-weight: 700;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    height: 100%;
+}
+.accordion-button:not(.collapsed) {
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+    font-weight: bold;
+}
+.accordion-body.feature {
+    font-weight: 400;
+    color: #939393;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: #000000;
+    // outline: 0;
+    // box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+    color: #066D72;
+    border: none;
+    outline: none;
+}
+.accordion-button:active {
+    z-index: 3;
+    border-color: #000000;
+    // outline: 0;
+    // box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+    color: #066D72;
+    border: none;
+    outline: none;
+}
+
+
+// animation on cartd border css
+User
+.card.our {
+    position: relative;
+    overflow: hidden;
+}
+
+.card.our::before,
+.card.our::after {
+    content: '';
+    position: absolute;
+    background-color: #066d72; /* Change as needed */
+    transition: transform 0.5s ease;
+}
+
+.card.our::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.card.our::after {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.card.our:hover::before,
+.card.our:hover::after {
+    transform: scaleX(1);
+}
+
+// inner pricing cssss
+section.inerpricing {
+    padding-top: 70px;
+}
+section.speciality {
+    padding-top: 50px;
+}
+section.iner-pricing {
+    background-color: black;
+    margin-top: 60px;
+    padding: 100px 0;
+}
+h1.headeingtext.price {
+    color: white;
+}
+.saving-parent1.price {
+    color: white;
+    padding-top: 25px;
+}
+h1.headeingtext.price.faq {
+    color: black;
+}
+section.iner-faq {
+    padding: 100px 0;
+}
+button.plan-btn {
+    width: 100%;
+    font-weight: bold;
+}
+.planbtn-p {
+    padding-top: 30px;
+}
+.project {
+    padding-top: 37px;
+    // font-weight: bold;
+}
+button.plan-btn1 {
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+h6.card-subtitle.text-body-secondary.plan {
+    font-size: 30px;
+    font-weight: 700;
+}
+.project p span {
+    margin-left: 13px;
+}
+h1.plan-num {
+    font-weight: bold;
+}
+.card.black.plan  {
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    margin-top: 80px;
+}
+.card.border.plan {
+    background-color: #066d72;
+    color: white;
+}
+button.plan-btn {
+    width: 100%;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+}
+
+
+
+
+// / BANNER CARD CSS
+.bottom-left {
+    position: absolute;
+    right: 29%;
+    bottom: -205px;
+    text-align: left;
+    width: 310px;
+    transform: translate(-50%, -50%);
+}
+.parent-banner   span {
+    font-size: 14px;
+    font-weight: 600;
+}
+.text-banner span {
+    font-size: 11px;
+}
+.parent-banner1 span {
+    font-size: 20px;
+    font-weight: bold;
+}
+.text-banner1 span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #066D72;
+}
+.card.banner-card {
+    border-radius: 19px;
+    width: 289px;
+}
+.card.banner-card {
+    border-radius: 19px;
+    width: 261px;
+}
+.fakeimg1 img {
+    width: 83%; 
+}
+.features-parent {
+    margin: 100px 0;
 }

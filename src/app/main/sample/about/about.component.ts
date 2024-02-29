@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
-
+import AOS from 'aos';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -9,7 +9,11 @@ export class AboutComponent implements OnInit {
   @ViewChildren('counterElement') counterElements: QueryList<ElementRef>;
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { AOS.init( {offset: 200, // Offset (in px) from the original trigger point
+  duration: "5s", // Duration of animation (in ms)
+  easing: 'ease-in-out', // Easing type
+  once: true});//AOS - 2
+  AOS.refresh();
   }
   ngAfterViewInit(): void {
     this.counterElements.forEach((counterElement: ElementRef) => {

@@ -11,6 +11,7 @@ import { HomeComponent } from './home.component';
 import { CoreDirectivesModule } from '@core/directives/directives';
 import { AboutComponent } from './about/about.component';
 import { OurfeatureComponent } from './ourfeature/ourfeature.component';
+import { PricingComponent } from './pricing/pricing.component';
 
 const routes = [
   {
@@ -37,11 +38,16 @@ const routes = [
     path: 'Ourfeature',
     component: OurfeatureComponent,
     data: { animation: 'Ourfeature' }
+  },
+  {
+    path: 'pricing',
+    component: PricingComponent,
+    data: { animation: 'pricing' }
   }
 ];
 
 @NgModule({
-  declarations: [SampleComponent, HomeComponent, AboutComponent, OurfeatureComponent],
+  declarations: [SampleComponent, HomeComponent, AboutComponent, OurfeatureComponent, PricingComponent],
   imports: [RouterModule.forChild(routes), ContentHeaderModule, TranslateModule, CoreCommonModule,CommonModule,CoreDirectivesModule],
   exports: [SampleComponent, HomeComponent,AboutComponent]
 })

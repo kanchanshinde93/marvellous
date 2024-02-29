@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core';
-
+import AOS from 'aos';
 @Component({
   selector: 'app-ourfeature',
   templateUrl: './ourfeature.component.html',
@@ -10,10 +10,14 @@ export class OurfeatureComponent implements AfterViewInit  {
   constructor() { }
 
   ngOnInit(): void {
-   
+    AOS.init( {offset: 200, // Offset (in px) from the original trigger point
+    duration: "5s", // Duration of animation (in ms)
+    easing: 'ease-in-out', // Easing type
+    once: true});//AOS - 2
+    AOS.refresh();
   }
 
-  ngAfterViewInit(): void {
+  ngAfterViewInit(): void { 
     this.counterElements.forEach((counterElement: ElementRef) => {
       const textContent = counterElement.nativeElement.innerText;
       const numberPart:any = parseInt(textContent);
@@ -36,4 +40,5 @@ export class OurfeatureComponent implements AfterViewInit  {
       counterElement.innerText = count.toString();
     }, 100); // interval set to 100ms
   }
+  
 }
