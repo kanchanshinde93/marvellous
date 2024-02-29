@@ -832,11 +832,11 @@ button.accordion-button.feature.collapsed {
     font-weight: 700;
 }
 
-.img-fluid {
+/* .img-fluid {
     max-width: 100%;
     height: auto;
     height: 100%;
-}
+} */
 .accordion-button:not(.collapsed) {
     color: #000000;
     background-color: #ffffff;
@@ -1016,3 +1016,26 @@ button.plan-btn {
 .features-parent {
     margin: 100px 0;
 }
+
+/* contant us */
+h6.card-subtitle.contantus{
+   margin: 13px;
+}
+button.formcontact {
+    color: black;
+    background-color: white;
+}
+
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+  }
+  .map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }

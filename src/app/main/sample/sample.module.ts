@@ -12,6 +12,7 @@ import { CoreDirectivesModule } from '@core/directives/directives';
 import { AboutComponent } from './about/about.component';
 import { OurfeatureComponent } from './ourfeature/ourfeature.component';
 import { PricingComponent } from './pricing/pricing.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 const routes = [
   {
@@ -43,11 +44,16 @@ const routes = [
     path: 'pricing',
     component: PricingComponent,
     data: { animation: 'pricing' }
+  },
+  {
+    path: 'ContactUs',
+    component: ContactUsComponent,
+    data: { animation: 'ContactUs' }
   }
 ];
 
 @NgModule({
-  declarations: [SampleComponent, HomeComponent, AboutComponent, OurfeatureComponent, PricingComponent],
+  declarations: [SampleComponent, HomeComponent, AboutComponent, OurfeatureComponent, PricingComponent, ContactUsComponent],
   imports: [RouterModule.forChild(routes), ContentHeaderModule, TranslateModule, CoreCommonModule,CommonModule,CoreDirectivesModule],
   exports: [SampleComponent, HomeComponent,AboutComponent]
 })
