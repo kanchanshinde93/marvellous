@@ -9,6 +9,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
   }
   a:hover{
     color: white;
@@ -1113,4 +1114,12 @@ p.card-text.contact {
 // pricng card home
 .row.justify-content-between.price-card.aos-init {
     padding-top: 30px;
+}
+
+// whatsapp
+.whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 5%;
 }
