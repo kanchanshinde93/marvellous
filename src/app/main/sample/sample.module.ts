@@ -14,6 +14,7 @@ import { OurfeatureComponent } from './ourfeature/ourfeature.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { BlogComponent } from './blog/blog.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 const routes = [
   {
@@ -50,11 +51,16 @@ const routes = [
     path: 'ContactUs',
     component: ContactUsComponent,
     data: { animation: 'ContactUs' }
+  },
+  {
+    path: 'PrivacyPolicy',
+    component: PrivacyPolicyComponent,
+    data: { animation: 'PrivacyPolicyComponent' }
   }
 ];
 
 @NgModule({
-  declarations: [SampleComponent, HomeComponent, AboutComponent, OurfeatureComponent, PricingComponent, ContactUsComponent, BlogComponent],
+  declarations: [SampleComponent, HomeComponent, AboutComponent, OurfeatureComponent, PricingComponent, ContactUsComponent, BlogComponent, PrivacyPolicyComponent],
   imports: [RouterModule.forChild(routes), ContentHeaderModule, TranslateModule, CoreCommonModule,CommonModule,CoreDirectivesModule],
   exports: [SampleComponent, HomeComponent,AboutComponent]
 })
