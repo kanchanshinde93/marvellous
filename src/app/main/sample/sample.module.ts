@@ -13,6 +13,7 @@ import { AboutComponent } from './about/about.component';
 import { OurfeatureComponent } from './ourfeature/ourfeature.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { BlogComponent } from './blog/blog.component';
 
 const routes = [
   {
@@ -53,7 +54,7 @@ const routes = [
 ];
 
 @NgModule({
-  declarations: [SampleComponent, HomeComponent, AboutComponent, OurfeatureComponent, PricingComponent, ContactUsComponent],
+  declarations: [SampleComponent, HomeComponent, AboutComponent, OurfeatureComponent, PricingComponent, ContactUsComponent, BlogComponent],
   imports: [RouterModule.forChild(routes), ContentHeaderModule, TranslateModule, CoreCommonModule,CommonModule,CoreDirectivesModule],
   exports: [SampleComponent, HomeComponent,AboutComponent]
 })
