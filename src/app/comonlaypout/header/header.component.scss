@@ -51,3 +51,12 @@ img.header-logo {
   width: 100%;
   max-width: 110px;
 }
+nav a {
+  margin-right: 10px;
+}
+
+.active {
+  color: #066d72 !important;
+  font-weight: bold !important  ;
+  border-bottom: 3.5px solid #066d72;
+}

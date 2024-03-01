@@ -346,13 +346,13 @@ h1.experience {
 
 // client section
 .client-ctn {
-    background-color: black;
+    background-color: #0c0c0c;
     height: 100%;
     color: white;
-    padding: 0;
+    padding: 75px;
     margin: 0;
     display: grid;
-    border-radius: 0px 30px 30px 0px;
+    border-radius: 30px;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -654,7 +654,7 @@ button.getstart {
 
 h2.testmonialtext{
     padding: 0;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 100;
     display: flex;
     justify-content: center;
@@ -667,10 +667,11 @@ p.testmonialname {
     display: flex;
     justify-content: center;
     font-size: 25px;
- /*    padding: 16%; */
+    padding: 3%;
     text-decoration: underline;
-    text-decoration: underline #ffff 5px;
+    text-decoration: underline #ffff 3px;
     text-underline-offset: 8px;
+    font-weight: 600;
 }
 
 
