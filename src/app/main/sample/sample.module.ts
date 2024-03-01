@@ -50,6 +50,11 @@ const routes = [
     path: 'ContactUs',
     component: ContactUsComponent,
     data: { animation: 'ContactUs' }
+  },
+  {
+    path: 'blog',
+    component: BlogComponent,
+    data: { animation: 'blog' }
   }
 ];
 

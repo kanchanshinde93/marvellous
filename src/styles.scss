@@ -1134,3 +1134,74 @@ p.card-text.contact {
 .textmove{
     font-size: 22px;
 }
+.blog-image img {
+    border-radius: 25px;
+}
+.blog-image{
+    text-align: center;
+    position: relative;
+}
+.blog-image::after{
+    // text-align: center;
+    position: absolute;
+    content: "";
+
+}
+
+
+
+.bottom-blog {
+    position: absolute;
+    /* text-align: center; */
+    width: 90%;
+    bottom: -48px;
+    transform: translate(6%, 17%);
+    /* border-radius: 20px; */
+}
+.card.blog {
+    border-radius: 20px;
+}
+.card-body.blog {
+    text-align: left;
+    padding: 30px;
+}
+.card-body.blog h5 {
+    font-weight: 600;
+}
+.card-body.blog p {
+    padding-top: 8px;
+    line-height: 29px;
+    color: grey;
+    margin: 0;
+}
+.blog-btn {
+    padding-top: 20px;
+    font-weight: 600;
+}   
+.blog-btn a{
+    text-decoration: none;
+    color: #066d72;
+}
+a.blog-button:hover {
+    color: #066d72;
+}
+.card-body.blog h4 {
+    font-weight: 700;
+}
+.row.blogg {
+    padding-top: 150px;
+}
+
+
+
+
+// jhdcvg
+marquee {
+    background-color: black;
+    color: white;
+    padding: 6px;
+    font-size: 16px;
+}
+marquee span {
+    margin-left: 250px;
+}
