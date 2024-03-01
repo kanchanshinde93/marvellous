@@ -34,6 +34,7 @@ section.features {
 }
 .features-parent22 {
     padding: 60px 0;
+    // background-image: url(./assets/images/myimages/Group.png);
 }
 .faeture-heading h5 {
     color: #066D72;
@@ -48,7 +49,10 @@ section.features {
 .feature-icon {
     margin-bottom: 40px;
 }
-
+.monthly-parent {
+    padding: 100px 0;
+    margin: 100px 0;
+}
 .feature-icon {
     height: 65px;
     width: 65px;
@@ -112,7 +116,7 @@ button {
 }
 
 section.case {
-    padding: 100px 0;
+    padding-top: 80px;
 }
 
 .images-parent {
@@ -138,7 +142,9 @@ section.get {
     // background-image: url(../../../assets/images/myimages/Group.png);
     background-color: #0e6e72;
 }
-
+.get-parent {
+    margin-top: 150px;
+}
 .faeture-heading1 {
     text-align: center;
     color: white;
@@ -194,7 +200,10 @@ button:focus {
 .banner-ctn h1 {
     font-weight: bold;
 }
-
+a.watch-btn {
+    color: black;
+    margin-left: 13px;
+}   
 /// freee
 button.form1 {
     padding: 10px;
@@ -229,7 +238,7 @@ button.form1 {
 }
 
 section.mybanner {
-    padding: 100px 0;
+    padding-top: 80px;
 }
 
 .fake-parent.col-sm-12.col-md-6.col-lg-6 {
@@ -291,7 +300,9 @@ p.card-text {
 .download-btn1 {
     padding-top: 30px;
 }
-
+section.aim {
+    padding-top: 80px;
+}
 .form-parent h1 span {
     color: #066d72;
     font-size: 20px;
@@ -307,9 +318,9 @@ h1.experience {
     align-items: center;
 }
 
-section.aim {
-    padding: 100px 0;
-}
+// section.aim {
+//     padding: 100px 0;
+// }
 
 .bottom-left {
     position: absolute;
@@ -360,7 +371,7 @@ section.aim {
 }
 
 section.client {
-    padding: 50px 0;
+    padding-top: 80px;
 }
 
 
@@ -376,7 +387,7 @@ p.trusted-ctn {
 
 section.trusted{
     /* padding: 58px 0; */
-    padding-top: 70px;
+    // padding-top: 100px;
 }
 .load li {
     list-style: none;
@@ -457,7 +468,7 @@ a.card-link1 {
 }
 
 section.earning {
-    padding: 60px 0;
+    padding-top: 80px;
 }
 
 .banner-ctn1 h1 {
@@ -467,19 +478,21 @@ section.earning {
 
 .download-btn11 {
     padding-top: 30px;
-    gap: 53px;
+    gap: 20px;
 }
 
 button.video-btn {
     background-color: white;
-    border: 1px solid black;
+    // border: 1px solid black;
 }
 
 button.video-btn a span {
     color: black;
     font-weight: bold;
 }
-
+button.video-btn img {
+    vertical-align: sub;
+}
 
 
 
@@ -704,7 +717,12 @@ h1.headeingtext{
     font-size: 60px;
     font-weight: 600;
 }
-
+.get-parent.about {
+    margin-top: 80px;
+}
+.get-parent.about {
+    margin-top: 80px;
+}
 .abouttext{
     font-size: 17px;
     line-height: 31px;
@@ -720,8 +738,8 @@ h1.headeingtext{
     .about-ctn {
         color: black;
     }
-    .about-case{
-        padding: 50px 0px;
+    .about-case {
+        padding-top: 50px;
     }
     .about-ctn h5 {
         font-size: 25px;
@@ -794,6 +812,12 @@ h1.client::before {
 .progress-bar {
     background-color:#066d72;
 }
+.features-parent.happy {
+    margin-top: 80px;
+}
+.features-parent.about {
+    margin-top: 80px;
+}
 .progress {
     display: flex;
     height: 1rem;
@@ -801,6 +825,9 @@ h1.client::before {
     font-size: .75rem;
     background-color: #e9ecef;
     border-radius: 2.25rem;
+}
+.get-parent.feature {
+    margin-top: 80px;
 }
 .progressbartxt h6{
 font-size: 18px;
@@ -907,15 +934,15 @@ User
 
 // inner pricing cssss
 section.inerpricing {
-    padding-top: 70px;
+    padding-top: 80px;
 }
 section.speciality {
-    padding-top: 50px;
+    padding-top: 80px;
 }
 section.iner-pricing {
     background-color: black;
     margin-top: 60px;
-    padding: 100px 0;
+    padding: 100px;
 }
 h1.headeingtext.price {
     color: white;
@@ -928,7 +955,7 @@ h1.headeingtext.price.faq {
     color: black;
 }
 section.iner-faq {
-    padding: 100px 0;
+    padding: 80px 0;
 }
 button.plan-btn {
     width: 100%;
@@ -994,13 +1021,13 @@ button.plan-btn {
     font-size: 11px;
 }
 .parent-banner1 span {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
 }
 .text-banner1 span {
-    font-size: 20px;
-    font-weight: bold;
-    color: #066D72;
+    font-size: 16px;
+    font-weight: 600;
+    color: #5E4EA1;
 }
 .card.banner-card {
     border-radius: 19px;
@@ -1014,28 +1041,78 @@ button.plan-btn {
     width: 83%; 
 }
 .features-parent {
-    margin: 100px 0;
+    margin-top: 150px;
 }
+.progress-bar.banner {
+    background-color: #5E4EA1;
+}
+.progress-bar.banner1 {
+    background-color: #F9BA33;
+}
+.progress-bar.banner2 {
+    background-color: #3BBB6E;
+}
+.text-banner12 span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #F9BA33;
+}
+.text-banner13 span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #3BBB6E;
+}
+
 
 /* contant us */
-h6.card-subtitle.contantus{
-   margin: 13px;
+h6.card-subtitle.contantus {
+    /* margin: 13px; */
+    margin-top: 23px;
+    font-weight: bold;
 }
-button.formcontact {
-    color: black;
-    background-color: white;
+ button.formcontact {
+     color: black;
+     background-color: white;
+ }
+ 
+ .map-container{
+     overflow:hidden;
+     padding-bottom:56.25%;
+     position:relative;
+     height:0;
+   }
+   .map-container iframe{
+     left:0;
+     top:0;
+     height:100%;
+     width:100%;
+     position:absolute;
+   }
+   .features-world {
+    padding: 113px 0;
+}
+section.Address {
+    padding-top: 100px;
+}
+section.features {
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+}
+p.add-ctn {
+    margin-top: 18px;
 }
 
-.map-container{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-  }
-  .map-container iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-  }
+section.world {
+    padding-top: 80px;
+}
+.saving-parent11.contact {
+    color: black;
+}
+p.card-text.contact {
+    color: black;
+}
+// pricng card home
+.row.justify-content-between.price-card.aos-init {
+    padding-top: 30px;
+}
