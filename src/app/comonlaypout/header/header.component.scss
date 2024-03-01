@@ -60,3 +60,24 @@ nav a {
   font-weight: bold !important  ;
   border-bottom: 3.5px solid #066d72;
 }
+
+
+
+.scroll-top{
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  z-index: 9999;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.scroll-top.visible {
+  display: block;
+}
