@@ -1220,4 +1220,12 @@ marquee span {
 }
 ul.ppul li {
     padding: 10px 0;
+}   
+button.getstart.footer-btn {
+    background-color: white;
+    color: black;
+}
+button.getstart.footer-btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
