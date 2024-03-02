@@ -1123,7 +1123,7 @@ p.card-text.contact {
 // whatsapp
 .whatsapp{
     position: fixed;
-    bottom: 60px;
+    bottom: 20px;
     right: 20px;
     width: 5%;
 }
@@ -1231,4 +1231,133 @@ button.getstart.footer-btn:hover {
 
 .row.blogg.last {
     padding-bottom: 80px;
+}
+nav a {
+    margin-right: 10px;
+  }
+
+// side bar for soicial links
+// .icon-bar {
+//     position: fixed;
+//     top: 50%;
+//     -webkit-transform: translateY(-50%);
+//     -ms-transform: translateY(-50%);
+//     transform: translateY(-50%);
+//   }
+  
+//   .icon-bar a {
+//     display: block;
+//     text-align: center;
+//     padding: 16px;
+//     transition: all 0.3s ease;
+//     color: white;
+//     // font-size: 20px; 
+//   }
+  
+//   .icon-bar a:hover {
+//     background-color: #000;
+//   }
+  
+//   .facebook {
+//     background: #ffffff;
+//     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+//     color: white;
+//   }
+  
+//   .twitter {
+//     background: #ffffff;
+//     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+//     color: white;
+//   }
+  
+//   .google {
+//     background: #ffffff;
+//     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+//     color: white;
+//   }
+  
+//   .linkedin {
+//     background: #000000;
+//     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+//     color: white;
+//   }
+  
+//   .youtube {
+//     background: #bb0000;
+//     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+//     color: white;
+//   }
+  
+
+
+
+  .social {
+    position: fixed;
+    top: 30%;
+  }
+  
+  .social ul {
+    list-style-type: none;
+    padding: 0;
+    transform: translatex(-270px);
+  }
+  
+  .social ul li {
+    display: block;
+    margin: 9px 17px;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    text-align: right;
+    padding: 14px;
+    border-radius: 0 30px 30px 0;
+    transition: all 1s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+  .social ul li:hover {
+    transform: translatex(110px);
+  }
+  
+  .social ul li.twitter:hover {
+    // background-color: #55acee;
+    background-color: #3b5999;
+  }
+  
+  .social ul li.facebook:hover {
+    // background-color: #3b5999;
+    background-color: #e4405f;
+    
+  }
+  
+  .social ul li.google-plus:hover {
+    background-color: #25d366;
+  }
+  
+  .social ul li.instagram:hover {
+    
+  }
+  
+  .social ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .social ul li i {
+    text-align: center;
+    margin-left: 14px;
+    color: black;
+    // background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    // width: 20px;
+    // height: 20px;
+    font-size: 20px;
+    transform: rotate(0deg);
+  }
+  
+  .social ul li:hover i {
+    transform: rotate(360deg);
+    transition: all 1s;
+  }
+  a.ic {
+    margin: 0;
 }
