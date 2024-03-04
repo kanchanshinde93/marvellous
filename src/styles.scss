@@ -213,7 +213,7 @@ button.form1 {
 
 .form-control {
     display: block;
-    width: 100%;
+    width: 80%;
     padding: 10px 15px;
     font-size: 1rem;
     font-weight: 400;
@@ -230,7 +230,7 @@ button.form1 {
 }
 
 .form-group {
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 .fakeimg1 {
@@ -249,7 +249,7 @@ section.mybanner {
 
 button.form1 {
     padding: 10px;
-    width: 100%;
+    width: 80%;
     border-radius: 0;
 }
 
@@ -978,6 +978,7 @@ h6.card-subtitle.text-body-secondary.plan {
 }
 h1.plan-num {
     font-weight: bold;
+    font-size: 30px;
 }
 .card.black.plan  {
     background-color: black;
@@ -1371,4 +1372,39 @@ div#accordionFlushExample1 {
 }
 div#accordionFlushExample1 {
     margin-top: 40px;
+}
+select#cars {
+    width: 80%;
+    padding: 10px 15px;
+}
+// button.form1 {
+//     background-color: white;
+//     color: black;
+//     font-weight: 700;
+//     border-radius: 3px;
+// }
+input#exampleInputEmail11 {
+    background-color: white;
+}
+select#cars {
+    background-color: white;
+    color: #6c757d;
+}
+.row.aboutnew {
+    display: flex;
+    align-items: center;
+}
+.card.black.plan p {
+    font-size: 14px;
+    line-height: 32px;
+}
+.card.border.plan p {
+    font-size: 14px;
+    line-height: 32px;
+}
+button.form1 {
+    background-color: #066d72;
+    color: white;
+    font-weight: 700;
+    border-radius: 3px;
 }
