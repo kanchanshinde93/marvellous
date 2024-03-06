@@ -13,7 +13,6 @@
 <!-- 
 <div class="counter" #counterElement>100</div> -->
 
-
 <section class="about-features">
     <div class="features-parent22">
         <div class="container">
@@ -93,23 +92,23 @@
         <div class="container">
             <div class="about-saving-parent1 text-center">
                 <div class="row featuretxt">
-                    <div class="col-md-3 ">
-                        <h5 class="counter" #counterElement>100K+ </h5>
-                        <p>Happy Clients</p>
+                    <div class="col-md-3 " *ngFor="let counterData of counters; let i = index">
+                        <h5 class="counter"  #counterElement>  {{ counterData.number }} {{ counterData.text }} </h5>
+                        <p>{{counterData.tittle}}</p>
                     </div>
-                    <div class="col-md-3  column">
-                        <h5 class="counter" counterElement>150K+</h5>
+                  <!--   <div class="col-md-3  column">
+                        <h5 class="counter" #counterElement>150K+</h5>
                         <p>Project Completes</p>
                     </div>
                     <div class="col-md-3  column">
-                        <h5 class="counter" counterElement>5+</h5>
+                        <h5 class="counter" #counterElement>5+</h5>
                         <p>Years Experience</p>
                     </div>
                     <div class="col-md-3  column">
-                        <h5 class="counter" counterElement>175+</h5>
+                        <h5 class="counter" #counterElement>175+</h5>
                         <p>Team Members</p>
                     </div>
-
+ -->
                 </div>
             </div>
         </div>
