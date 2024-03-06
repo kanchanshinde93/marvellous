@@ -631,27 +631,27 @@
                   </div>
                   <div class="form-group">
                     <input type="email" class="form-control" formControlName="email" id="exampleInputEmail11"
-                      aria-describedby="emailHelp" placeholder="Email" [ngClass]="{
+                      aria-describedby="emailHelp" placeholder="Phone Number" [ngClass]="{
                         'is-invalid': submitted && b.email.errors
                       }"/>
                     <div>
                       <div *ngIf="submitted && b.email.errors" class="invalid-feedback">
-                        <div *ngIf="b.email.errors.required"> Email is required</div>
+                        <div *ngIf="b.email.errors.required"> Phone Number is required</div>
                       </div>
                     </div>
                   </div>
-                  <div class="form-group">
+                  <!-- <div class="form-group">
                     <input type="email" class="form-control" formControlName="phonenumber" id="exampleInputEmail11"
                       aria-describedby="emailHelp" placeholder="Phone Number" [ngClass]="{
                         'is-invalid': submitted && b.phonenumber.errors
                       }">
                     <div class="invalid-feedback">
                       <div *ngIf="submitted && b.phonenumber.errors" class="invalid-feedback">
-                        <div *ngIf="b.phonenumber.errors.required"> PhoneNumber is required</div>
+                        <div *ngIf="b.phonenumber.errors.required"> Phone Number is required</div>
                       </div>
                     </div>
-                  </div>
-                  <div class="form-group">
+                  </div> -->
+                  <!-- <div class="form-group">
                     <input type="email" class="form-control" formControlName="city" id="exampleInputEmail11"
                       aria-describedby="emailHelp" placeholder="City"  [ngClass]="{
                         'is-invalid': submitted && b.city.errors
@@ -662,8 +662,8 @@
                       </div>
                     </div>
                   </div>
-  
-                  <div class="form-group">
+   -->
+                  <!-- <div class="form-group">
                     <textarea name="user-message" id="user-message" formControlName="message" class="form-control" cols="1" rows="3"
                       placeholder="Enter your Message" [ngClass]="{
                         'is-invalid': submitted && b.message.errors
@@ -673,6 +673,22 @@
                           <div *ngIf="b.message.errors.required"> Message is required</div>
                         </div>
                       </div>
+                  </div> -->
+                  <div class="form-group ">
+                    <select  class="form-control" name="cars" id="cars">
+                      <option hidden >State</option>
+                      <option value="saab">Uttar Pradesh</option>
+                      <option value="opel">Andra Pradesh</option>
+                      <option value="audi">Gujrat</option>
+                    </select>
+                </div>
+                  <div class="form-group ">
+                      <select  class="form-control" name="cars" id="cars">
+                        <option hidden >Choose Plan</option>
+                        <option value="saab">Basic Plan</option>
+                        <option value="opel">Master Plan</option>
+                        <option value="audi">Advance Plan</option>
+                      </select>
                   </div>
                   <button type="submit" class="form1">Submit</button>
                 </form>
