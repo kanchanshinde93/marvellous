@@ -52,7 +52,7 @@ section.features {
 }
 .monthly-parent {
     padding: 100px 0;
-    margin: 100px 0;
+    margin: 80px 0;
 }
 .feature-icon {
     height: 65px;
@@ -551,6 +551,18 @@ button.video-btn img {
     .centeredtxt {
         font-size: 25px;
     }
+    nav.social {
+        display: none;
+    }
+    .col-md-12.col-lg-4.col-sm-12.save {
+        padding-top: 35px;
+    }
+    section.earning {
+        padding-top: 0;
+    }
+    .centeredtxt {
+        font-size: 30px !important;
+    }
 }
 
 @media(max-width:767px) {
@@ -576,9 +588,9 @@ button.video-btn img {
         padding-top: 30px;
     }
 
-    .fakeimg.child {
-        padding: 23px;
-    }
+    // .fakeimg.child {
+    //     padding: 23px;
+    // }
 
     .dowload-parent {
         text-align: center;
@@ -607,8 +619,17 @@ button.video-btn img {
         font-size: 15px;
     }
     .centeredtxt {
-        font-size: 25px;
-    }  
+        font-size: 30px !important;
+    }
+    nav.social {
+        display: none;
+    }
+    .col-md-12.col-lg-4.col-sm-12.save {
+        padding-top: 35px;
+    }
+    section.earning {
+        padding-top: 0;
+    }
 }
 
 

@@ -321,7 +321,7 @@
       </div>
       <div class="saving-parent">
         <div class="row" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-          <div class="col-md-12 col-lg-4 col-sm-12">
+          <div class="col-md-12 col-lg-4 col-sm-12 save">
             <div class="feature-icon">
               <!-- <i data-feather="dollar-sign" [size]="33" class=" cursor-pointer"></i> -->
               <img src="../../../assets/images/icons/Vector (2).svg" alt="">
@@ -329,16 +329,16 @@
             <h5>Monthly Payout</h5>
 
           </div>
-          <div class="col-md-12 col-lg-4 col-sm-12">
+          <div class="col-md-12 col-lg-4 col-sm-12 save">
             <div class="feature-icon">
               <img src="../../../assets/images/icons/Vector (3).svg" alt="">
             </div>
             <h5>Guaranteed Returns</h5>
 
           </div>
-          <div class="col-md-12 col-lg-4 col-sm-12">
+          <div class="col-md-12 col-lg-4 col-sm-12 save">
             <div class="feature-icon">
-              <img src="../../../assets/images/icons/Vector (6).svg" alt="">
+              <img src="../../../assets/images/icons/Vector (6).svg " alt="">
             </div>
             <h5> Transparent Process</h5>
 
@@ -619,38 +619,39 @@
               <div class="form-parent">
                 <form [formGroup]="marvellousForm" (ngSubmit)="marvellousSubmit()">
                   <div class="form-group">
-                    <input type="email" class="form-control" formControlName="name" id="exampleInputEmail11"
+                    <input type="email" class="form-control" formControlName="fullName" id="exampleInputEmail11"
                       aria-describedby="emailHelp" placeholder="Full Name" [ngClass]="{
-                        'is-invalid': submitted && b.name.errors
+                        'is-invalid': submitted && b.fullName.errors
                       }"/>
                     <div>
-                      <div *ngIf="submitted && b.name.errors" class="invalid-feedback">
-                        <div *ngIf="b.name.errors.required"> Full Name is required</div>
+                      <div *ngIf="submitted && b.fullName.errors" class="invalid-feedback">
+                        <div *ngIf="b.fullName.errors.required"> Full Name is required</div>
+                      </div>
+                    </div>
+                  </div>
+               
+                  <div class="form-group">
+                    <input type="email" class="form-control" formControlName="phone" id="exampleInputEmail11"
+                      aria-describedby="emailHelp" placeholder="Phone Number" [ngClass]="{
+                        'is-invalid': submitted && b.phone.errors
+                      }">
+                    <div class="invalid-feedback">
+                      <div *ngIf="submitted && b.phone.errors" class="invalid-feedback">
+                        <div *ngIf="b.phone.errors.required"> Phone Number is required</div>
                       </div>
                     </div>
                   </div>
                   <div class="form-group">
-                    <input type="email" class="form-control" formControlName="email" id="exampleInputEmail11"
-                      aria-describedby="emailHelp" placeholder="Phone Number" [ngClass]="{
-                        'is-invalid': submitted && b.email.errors
-                      }"/>
-                    <div>
-                      <div *ngIf="submitted && b.email.errors" class="invalid-feedback">
-                        <div *ngIf="b.email.errors.required"> Phone Number is required</div>
+                    <input type="email" class="form-control" formControlName="state" id="exampleInputEmail11"
+                      aria-describedby="emailHelp" placeholder="State" [ngClass]="{
+                        'is-invalid': submitted && b.state.errors
+                      }">
+                    <div class="invalid-feedback">
+                      <div *ngIf="submitted && b.state.errors" class="invalid-feedback">
+                        <div *ngIf="b.state.errors.required"> state is required</div>
                       </div>
                     </div>
                   </div>
-                  <!-- <div class="form-group">
-                    <input type="email" class="form-control" formControlName="phonenumber" id="exampleInputEmail11"
-                      aria-describedby="emailHelp" placeholder="Phone Number" [ngClass]="{
-                        'is-invalid': submitted && b.phonenumber.errors
-                      }">
-                    <div class="invalid-feedback">
-                      <div *ngIf="submitted && b.phonenumber.errors" class="invalid-feedback">
-                        <div *ngIf="b.phonenumber.errors.required"> Phone Number is required</div>
-                      </div>
-                    </div>
-                  </div> -->
                   <!-- <div class="form-group">
                     <input type="email" class="form-control" formControlName="city" id="exampleInputEmail11"
                       aria-describedby="emailHelp" placeholder="City"  [ngClass]="{
@@ -674,14 +675,7 @@
                         </div>
                       </div>
                   </div> -->
-                  <div class="form-group ">
-                    <select  class="form-control" name="cars" id="cars">
-                      <option hidden >State</option>
-                      <option value="saab">Uttar Pradesh</option>
-                      <option value="opel">Andra Pradesh</option>
-                      <option value="audi">Gujrat</option>
-                    </select>
-                </div>
+                <!-- x -->
                   <div class="form-group ">
                       <select  class="form-control" name="cars" id="cars">
                         <option hidden >Choose Plan</option>

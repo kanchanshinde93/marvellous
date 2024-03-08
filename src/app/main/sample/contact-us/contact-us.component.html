@@ -98,36 +98,65 @@
                     </p>
                   </div>
                   <div class="form-parent">
-                    <form>
+                    <form [formGroup]="marvellousForm" (ngSubmit)="marvellousSubmit()">
                       <div class="form-group">
-                        <input type="email" class="form-control" formControlName="name" id="exampleInputEmail11"
-                          aria-describedby="emailHelp" placeholder="Full Name" />
+                        <input type="email" class="form-control" formControlName="fullName" id="exampleInputEmail11"
+                          aria-describedby="emailHelp" placeholder="Full Name" [ngClass]="{
+                            'is-invalid': submitted && b.fullName.errors
+                          }"/>
                         <div>
-                          <!-- <div> Full Name is required</div> -->
+                          <div *ngIf="submitted && b.fullName.errors" class="invalid-feedback">
+                            <div *ngIf="b.fullName.errors.required"> Full Name is required</div>
+                          </div>
+                        </div>
+                      </div>
+                   
+                      <div class="form-group">
+                        <input type="email" class="form-control" formControlName="phone" id="exampleInputEmail11"
+                          aria-describedby="emailHelp" placeholder="Phone Number" [ngClass]="{
+                            'is-invalid': submitted && b.phone.errors
+                          }">
+                        <div class="invalid-feedback">
+                          <div *ngIf="submitted && b.phone.errors" class="invalid-feedback">
+                            <div *ngIf="b.phone.errors.required"> Phone Number is required</div>
+                          </div>
                         </div>
                       </div>
                       <div class="form-group">
-                        <input type="email" class="form-control" formControlName="name" id="exampleInputEmail11"
-                          aria-describedby="emailHelp" placeholder="Phone Number" />
-                        <div>
-                          <!-- <div> Full Name is required</div> -->
+                        <input type="email" class="form-control" formControlName="state" id="exampleInputEmail11"
+                          aria-describedby="emailHelp" placeholder="State" [ngClass]="{
+                            'is-invalid': submitted && b.state.errors
+                          }">
+                        <div class="invalid-feedback">
+                          <div *ngIf="submitted && b.state.errors" class="invalid-feedback">
+                            <div *ngIf="b.state.errors.required"> state is required</div>
+                          </div>
                         </div>
                       </div>
-                      <div class="form-group">
-                        <input type="email" class="form-control" formControlName="name" id="exampleInputEmail11"
-                          aria-describedby="emailHelp" placeholder="State" />
-                        <div>
-                          <!-- <div> Full Name is required</div> -->
+                      <!-- <div class="form-group">
+                        <input type="email" class="form-control" formControlName="city" id="exampleInputEmail11"
+                          aria-describedby="emailHelp" placeholder="City"  [ngClass]="{
+                            'is-invalid': submitted && b.city.errors
+                          }"/>
+                        <div class="invalid-feedback">
+                          <div *ngIf="submitted && b.city.errors" class="invalid-feedback">
+                            <div *ngIf="b.city.errors.required"> City is required</div>
+                          </div>
                         </div>
                       </div>
-                      <!-- <div class="form-group ">
-                        <select  class="form-control" name="cars" id="cars">
-                          <option hidden >State</option>
-                          <option value="saab">Uttar Pradesh</option>
-                          <option value="opel">Andra Pradesh</option>
-                          <option value="audi">Gujrat</option>
-                        </select>
-                    </div> -->
+       -->
+                      <!-- <div class="form-group">
+                        <textarea name="user-message" id="user-message" formControlName="message" class="form-control" cols="1" rows="3"
+                          placeholder="Enter your Message" [ngClass]="{
+                            'is-invalid': submitted && b.message.errors
+                          }"></textarea>
+                          <div class="invalid-feedback">
+                            <div *ngIf="submitted && b.message.errors" class="invalid-feedback">
+                              <div *ngIf="b.message.errors.required"> Message is required</div>
+                            </div>
+                          </div>
+                      </div> -->
+                    <!-- x -->
                       <div class="form-group ">
                           <select  class="form-control" name="cars" id="cars">
                             <option hidden >Choose Plan</option>
@@ -136,19 +165,7 @@
                             <option value="audi">Advance Plan</option>
                           </select>
                       </div>
-                      
-      
-                      <!-- <div class="form-group"> -->
-                        <!-- <textarea name="user-message" id="user-message" class="form-control" cols="1" rows="3" -->
-                          <!-- placeholder="Enter your Message"></textarea> -->
-                        <!--end col 10-->
-                        <!--   <textarea _ngcontent-xwh-c184="" formcontrolname="message" id="exampleFormControlTextarea1" rows="3"
-                          placeholder="Select Message" class="form-control ng-pristine ng-invalid ng-touched"
-                          ng-reflect-name="message" ng-reflect-ng-class="[object Object]"> </textarea> -->
-                        <!-- <textarea class="form-control" formControlName="message" id="exampleFormControlTextarea1" rows="3"
-                          placeholder="Message"> </textarea> -->
-                      <!-- </div> -->
-                      <button type="submit contact" class="form1">Submit</button>
+                      <button type="submit" class="form1">Submit</button>
                     </form>
                   </div>
                 </div>

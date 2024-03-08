@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core'
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import AOS from 'aos';
+import { AdminServiceService } from 'app/Services/admin-service.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-home',
@@ -9,10 +11,11 @@ import AOS from 'aos';
 })
 export class HomeComponent implements OnInit {
 
-  public marvellousForm :FormGroup
+  public marvellousForm: FormGroup
   public contentHeader: object
-  submitted: boolean=false;
-  constructor(private fb: FormBuilder) {}
+  submitted: boolean = false;
+ bannerForm: any;
+  constructor(private fb: FormBuilder, private adminService: AdminServiceService,private toastr:ToastrService) { }
   // Lifecycle Hooks
   // -----------------------------------------------------------------------------------------------------
 
@@ -22,19 +25,20 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
 
     this.marvellousForm = this.fb.group({
-      name: new FormControl("", [Validators.required]),
-      email: new FormControl("", [Validators.required]),
-      phonenumber: new FormControl("", [Validators.required]),
-      city: new FormControl("", [Validators.required]),
-      message: new FormControl("", [Validators.required]),
+      fullName: new FormControl("", [Validators.required]),
+      phone: new FormControl("", [Validators.required]),
+      state: new FormControl("", [Validators.required]),
+    /*   plan: new FormControl("", [Validators.required]), */
     })
-    
-    AOS.init( {offset: 200, // Offset (in px) from the original trigger point
-    duration: "5s", // Duration of animation (in ms)
-    easing: 'ease-in-out', // Easing type
-    once: true});//AOS - 2
+
+    AOS.init({
+      offset: 200, // Offset (in px) from the original trigger point
+      duration: "5s", // Duration of animation (in ms)
+      easing: 'ease-in-out', // Easing type
+      once: true
+    });//AOS - 2
     AOS.refresh();
-    
+
     this.contentHeader = {
       headerTitle: 'Home',
       actionButton: true,
@@ -59,33 +63,33 @@ export class HomeComponent implements OnInit {
     return this.marvellousForm.controls;
   }
 
-  marvellousSubmit(){
+  marvellousSubmit() {
     this.submitted = true;
     if (this.marvellousForm.invalid) {
       return;
     } else {
-      this.marvellousForm.reset()
-       this.submitted = false;
-      /* let body={
-      fullName: this.marvellousForm.value.name ,
-      phone: this.marvellousForm.value.pNumber ,
-     city: this.marvellousForm.value.citys ,
-     
+      
+      let body = {
+        fullName: this.marvellousForm.value.fullName,
+        phone: this.marvellousForm.value.phone,
+        state: this.marvellousForm.value.state,
+        plan: 'Advance',
+
+      }
+      console.log(body);
+      this.adminService.contactForm(body).subscribe((data: any) => {
+        console.log(data)
+        if (data.status) {
+          this.toastr.success(data.message, "Success!");
+          this.marvellousForm.reset()
+          this.submitted = false;
+
+        } else {
+          this.toastr.error(data.message, "error!")
+
         }
-        console.log(body); */
-        /*  this.adminService.contactForm(body).subscribe((data: any) => {
-          console.log(data)
-          if(data.status){
-            this.toastr.success(data.message,"Success!");
-            this.bannerForm.reset()
-            this.submittedb = false;
-           
-          }else{
-            this.toastr.error(data.message,"error!")
-            
-          }
-          
-        });   */
+
+      });
     }
   }
 }
