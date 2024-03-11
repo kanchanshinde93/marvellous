@@ -810,7 +810,7 @@ h1.headeingtext{
         gap: 15px;
     }
     // dkjbvn hjdvb  animation
-@property --num {
+/* @property --num {
     syntax: '<integer>';
     inherits: false;
     initial-value: 1;
@@ -824,7 +824,7 @@ h1.client::before {
 }
 @keyframes count {
 
-    /*  to { --num: 5; } */
+  
     from {
         --num: 1;
     }
@@ -832,7 +832,7 @@ h1.client::before {
     to {
         --num: 300;
     }
-}
+} */
 
 .about-textsaving {
     font-size: 48px;
@@ -1474,4 +1474,17 @@ button.getstart.footer-btn a {
 button.getstart.footer-btn a:hover {
     color: white;
     // background-color: white;
+}
+.form-parent {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+.form-parent span {
+    color: #0e6e72;
+    font-size: 20px;
+    font-weight: 700;
+}
+strong {
+    font-size: 70px;
 }

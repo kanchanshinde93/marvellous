@@ -15,12 +15,16 @@ export class AboutComponent implements OnInit {
   once: true});//AOS - 2
   AOS.refresh();
   }
-  ngAfterViewInit(): void {
-    this.counterElements.forEach((counterElement: ElementRef) => {
-      this.animateCounter(counterElement.nativeElement);
-    });
-  }
-  animateCounter(counterElement: HTMLElement) {
+  ngAfterViewInit(): void { 
+     this.counterElements.forEach((counterElement: ElementRef) => {
+       const textContent = counterElement.nativeElement.innerText;
+       const numberPart:any = parseInt(textContent);
+       const textPart:any = textContent.replace(numberPart.toString(), '');
+       this.animateCounter(counterElement.nativeElement);
+     });
+    
+   }
+   animateCounter(counterElement: HTMLElement) {
     let count = 0;
     const targetCount = parseInt(counterElement.innerText);
     const duration = 5000;
