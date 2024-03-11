@@ -234,10 +234,13 @@ button.form1 {
 }
 
 .fakeimg1 {
-    text-align: center;
+    text-align: end;
     position: relative;
 }
-
+.fakeimg1aim {
+    text-align: start;
+    position: relative;
+}
 section.mybanner {
     padding-top: 80px;
 }
@@ -563,6 +566,12 @@ button.video-btn img {
     .centeredtxt {
         font-size: 30px !important;
     }
+    .col-md-6.col-lg-6.col-sm-12.blog11 {
+        padding-top: 150px;
+    }
+    button.get-btn1 {
+        margin-top: 30px;
+    }
 }
 
 @media(max-width:767px) {
@@ -630,6 +639,12 @@ button.video-btn img {
     section.earning {
         padding-top: 0;
     }
+    .col-md-6.col-lg-6.col-sm-12.blog11 {
+        padding-top: 150px;
+    }
+    button.get-btn1 {
+        margin-top: 30px;
+    }
 }
 
 
@@ -656,7 +671,7 @@ h1.experience::before {
     }
 
     to {
-        --num: 5;
+        --num: 300;
     }
 }
 
@@ -830,7 +845,7 @@ h1.client::before {
     }
 
     to {
-        --num: 300;
+        --num: 5;
     }
 }
 
@@ -1201,6 +1216,7 @@ p.card-text.contact {
     content: "";
 
 }
+
 
 
 

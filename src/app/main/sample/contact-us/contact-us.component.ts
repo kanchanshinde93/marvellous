@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { AdminServiceService } from 'app/Services/admin-service.service';
 import { ToastrService } from 'ngx-toastr';
 
@@ -16,6 +16,13 @@ export class ContactUsComponent implements OnInit {
   constructor(private fb: FormBuilder, private adminService: AdminServiceService,private toastr:ToastrService) { }
 
   ngOnInit(): void {
+    this.marvellousForm = this.fb.group({
+      fullName: new FormControl("", [Validators.required]),
+      phone: new FormControl("", [Validators.required]),
+      state: new FormControl("", [Validators.required]),
+    /*   plan: new FormControl("", [Validators.required]), */
+    })
+
   }
 
   

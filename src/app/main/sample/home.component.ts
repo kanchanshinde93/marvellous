@@ -33,7 +33,7 @@ export class HomeComponent implements OnInit {
 
     AOS.init({
       offset: 200, // Offset (in px) from the original trigger point
-      duration: "5s", // Duration of animation (in ms)
+      duration: "4s", // Duration of animation (in ms)
       easing: 'ease-in-out', // Easing type
       once: true
     });//AOS - 2
