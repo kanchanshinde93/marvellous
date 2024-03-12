@@ -1304,11 +1304,16 @@ button.getstart.footer-btn {
     background-color: white;
     color: black;
 }
-button.getstart.footer-btn:hover {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+button.getstart.footer-btn.hover a:hover {
+    color: black;
 }
-
+// button.getstart.footer-btn:hover {
+//     background-color: rgb(0, 0, 0);
+//     color: rgb(255, 255, 255);
+// }
+button.getstart.footer-btn a:hover {
+    color: black;
+}
 .row.blogg.last {
     padding-bottom: 80px;
 }
