@@ -16,6 +16,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { BlogComponent } from './blog/blog.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { BlogdetailsComponent } from './blogdetails/blogdetails.component';
+import { CryptoComponent } from './crypto/crypto.component';
 
 const routes = [
   {
@@ -69,11 +70,15 @@ const routes = [
     path: 'Blogdetails',
     component: BlogdetailsComponent,
     data: { animation: 'Blogdetails' }
+  },  {
+    path: 'crypto',
+    component: CryptoComponent,
+    data: { animation: 'crypto' }
   }
 ];
 
 @NgModule({
-  declarations: [SampleComponent, HomeComponent, AboutComponent, OurfeatureComponent, PricingComponent, ContactUsComponent, BlogComponent, PrivacyPolicyComponent, BlogdetailsComponent],
+  declarations: [SampleComponent, HomeComponent, AboutComponent, OurfeatureComponent, PricingComponent, ContactUsComponent, BlogComponent, PrivacyPolicyComponent, BlogdetailsComponent, CryptoComponent],
   imports: [RouterModule.forChild(routes), ContentHeaderModule, TranslateModule, CoreCommonModule,CommonModule,CoreDirectivesModule],
   exports: [SampleComponent, HomeComponent,AboutComponent]
 })
